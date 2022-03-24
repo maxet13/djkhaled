@@ -1,0 +1,123 @@
+<!doctype html> <!-- doctype tag must exist at the top of every html5 file -->
+<html lang="en">
+<!-- head section -- the "backstage" area of the web page -->
+<head>
+	<!-- meta tags -->
+	<meta charset="utf-8" />
+	<meta name="description" content="Image gallery for DJ Khaled">
+  	<meta name="keywords" content="DJ Khaled, music, hip hop">
+  	<meta name="author" content="Max Tarlin">
+
+	<!-- shiv/shim - Helps Internet Explorer older than v. 9 work correctly with html5 -->
+	<!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+
+	<!-- Viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- stylesheet links -->
+	<link rel="stylesheet" href="/styles/normalize.css">
+	<link rel="stylesheet" href="styles/main.css">
+
+	<!-- favicon link -->
+	<link rel="icon" href="images/icon.png">
+
+	<!-- title tag -->
+	<title>DJ Khaled Image Gallery</title>
+
+	<!-- ----------- ----------- Slicknav Links and Scripts ----------- ----------- -->
+	<!-- Slicknav Stylesheet link -->
+	<link rel="stylesheet" href="styles/slicknav.css">
+	<!-- jQuery CDN - needed to drive slicknav -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- link to local js slicknav script file -->
+	<script src="js/jquery.slicknav.min.js"></script>
+	<!-- slicknav script - converts contents of nav_menu to mobilemenu -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+		});
+	</script>
+	<!-- ----------- ---------- END Slicknav Links and Scripts ---------- ---------- -->
+
+</head>
+
+<!-- body - contains the entire visible area of the web page and all it's containers --->
+<body> 
+
+	<!-- header - the top part of the webpage, containing the logo image and site name -->
+	<header class="clearfix"> <!-- clearfix class used to prevent logo image from overflowing the header area -->
+		<a href="index.html"><img id="logoimage" src="images/icon.png" alt="Return to homepage" title="Return to homepage"></a>
+		<a href="index.html"><h2 alt="Return to homepage" title="Return to homepage">DJ Khaled</h2></a>
+	</header>
+
+	<!-- slicknav nav tags -->
+	<nav id="mobilemenu"></nav>
+	
+	<main>
+		<h1>Image Gallery</h1>
+		
+		
+<!-- Photo Grid -->
+<div class="row"> 
+	<div class="column">
+	  <img src="images/dj1.jpeg">
+	  <img src="images/dj2.jpeg">
+	  <img src="images/dj4.jpeg">
+	  <img src="images/dj5.webp">
+	  <img src="images/dj7.jpg">
+
+	  
+
+	</div>
+	
+	<div class="column">
+	  <img src="images/dj13.webp">
+	  <img src="images/dj14.webp">
+	  <img src="images/dj15.jpeg">
+	  <img src="images/dj16.webp">
+	  <img src="images/dj17.webp">
+	  <img src="images/dj18.jpeg">
+
+	  
+	</div> 
+    <div class="column">
+        <img src="images/dj9.jpeg">
+        <img src="images/dj10.webp">
+        <img src="images/dj11.webp">
+        <img src="images/dj12.jpeg">
+        <img src="images/dj24.webp">
+        <img src="images/dj25.jpeg">
+        <img src="images/dj8.jpeg">
+
+      </div>
+      
+      <div class="column">
+        <img src="images/dj19.jpeg">
+        <img src="images/dj20.webp">
+        <img src="images/dj21.jpeg">
+        <img src="images/dj22.webp">
+        <img src="images/dj23.webp">
+        <img src="images/dj6.jpg">
+
+      </div>
+	 
+
+  </div>
+  
+
+	</main>
+	<!-- Javascript - Get Current Year for the Footer -->
+	<script>
+        window.onload = function() {
+            var d = new Date();
+            document.getElementById("copyright").innerHTML = d.getFullYear();
+        }
+    </script>
+
+
+	<!-- footer - the bottom section of the web page, containing the copyright information -->
+	<footer>
+		<p>&copy; <span id="copyright"></span> Max Tarlin Productions</p>
+	</footer>
+</body>
+</html>
